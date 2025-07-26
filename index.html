@@ -278,20 +278,6 @@
       transform: scale(1.2) rotate(10deg);
     }
 
-    .loading-screen {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100vw;
-      height: 100vh;
-      background: var(--current-bg);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      z-index: 9999;
-      animation: fadeOut 1.5s 2.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-    }
-
     .loading-screen h1 {
       font-size: 2.5rem;
       animation: loadingPulse 2s ease-in-out infinite;
@@ -885,16 +871,6 @@
 <body data-theme="dark">
   <div class="theme-toggle" onclick="toggleTheme()">
     <i class="fas fa-sun" id="themeIcon"></i>
-  </div>
-
-  <div class="loading-screen" id="loading">
-    <h1>Khafa XD Site Portfolio</h1>
-    <div class="loading-spinner"></div>
-    <div class="loading-dots">
-      <div class="loading-dot"></div>
-      <div class="loading-dot"></div>
-      <div class="loading-dot"></div>
-    </div>
   </div>
 
   <div class="container" id="intro">
