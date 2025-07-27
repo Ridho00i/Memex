@@ -886,7 +886,7 @@
   <div class="theme-toggle" onclick="toggleTheme()">
     <i class="fas fa-sun" id="themeIcon"></i>
   </div>
-  
+
   <div class="container" id="intro">
     <img src="media/jiha6i.jpg" alt="Khafa XD" class="profile-img">
     <h1>Khafa XD</h1>
@@ -1137,10 +1137,9 @@
     window.onload = () => {
       loadTheme();
       setTimeout(() => {
-        loading.style.display = 'none';
         intro.style.display = 'block';
         typeText(document.getElementById("introTyping"), texts);
-      }, 4000);
+      }, 100);
     };
 
     function goToMain() {
